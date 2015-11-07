@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>La compagnie...</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/quick.css">
+    <!-- endbuild -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+  <body ng-app="showcaseApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <header></header>
+
+    <div class="container" id="content-container">
+      <div class="row">
+        <div class="col-xs-12 col-md-10 col-md-offset-1">
+          <ng-view></ng-view>
+        </div>
+      </div>
+    </div>
+
+    <footer></footer>
+
+    <noscript>Veuillez activer JavaScript sur votre navigateur web pour une expérience optimale.  </noscript>
+
+    <!-- Google Analytics: change UA-56568411-2 to be your site's ID -->
+    <script>
+      !function (A, n, g, u, l, a, r) {
+        A.GoogleAnalyticsObject = l, A[l] = A[l] || function () {
+          (A[l].q = A[l].q || []).push(arguments)
+        }, A[l].l = +new Date, a = n.createElement(g),
+                r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+      }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-56568411-2');
+      ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/home.js"></script>
+    <script src="scripts/controllers/saison.js"></script>
+    <script src="scripts/controllers/evenement.js"></script>
+    <script src="scripts/controllers/compagnie.js"></script>
+    <script src="scripts/controllers/creation.js"></script>
+    <script src="scripts/controllers/adulte.js"></script>
+    <script src="scripts/controllers/jeune.js"></script>
+    <script src="scripts/services/common.js"></script>
+    <script src="scripts/controllers/header.js"></script>
+    <script src="scripts/directives/header.js"></script>
+    <script src="scripts/directives/footer.js"></script>
+    <script src="scripts/controllers/footer.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
